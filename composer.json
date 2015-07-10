@@ -1,0 +1,24 @@
+{
+  "name": "sarcoma/users",
+  "description": "User log in, authentication and account activation.",
+  "keywords": [
+    "User Class",
+    "Doctrine"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sean Cooper",
+      "email": "sean@threeandme.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "4.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sarcoma\\": "src/"
+    }
+  }
+}
