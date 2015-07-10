@@ -2,7 +2,7 @@
 # Sarcoma Users Class
 This is a PHP User authentication class. It doesn't do anything special, and I'm sure there are better ways of doing it, but this does what I need it to do. If you think you can do better you're probably right, so feel free to send pull requests.
 
-The class has annotations for use with Doctine ORM, but this is not required.
+The class has annotations for use with Doctrine ORM, but this is not required.
 
 ## Install
 
