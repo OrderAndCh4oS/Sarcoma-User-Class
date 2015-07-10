@@ -16,6 +16,9 @@
   "require-dev": {
     "phpunit/phpunit": "4.7.*"
   },
+  "suggest": {
+    "doctrine/orm": "2.5.*"
+  },
   "autoload": {
     "psr-4": {
       "Sarcoma\\": "src/"
