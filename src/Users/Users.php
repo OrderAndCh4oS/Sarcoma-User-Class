@@ -2,15 +2,12 @@
 
 namespace Sarcoma\Users;
 
-    /**
-     * Class Users
-     * @package Sarcoma\Users
-     * @Entity @Table(name="users")
-     */
 /**
  * Class Users
  * @package Sarcoma\Users
+ * @Entity @Table(name="users")
  */
+
 class Users
 {
     /** @Id @Column(type="integer") @GeneratedValue */
