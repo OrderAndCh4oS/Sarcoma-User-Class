@@ -193,21 +193,6 @@ class Users
     }
 
     /**
-     * @param string $username
-     * @param string $email
-     * @param string $password
-     *
-     * @codeCoverageIgnore
-     */
-    public function persistUser($username, $email, $password)
-    {
-        $this->setEmail($email);
-        $this->setUsername($username);
-        $this->setPasswordHash($password);
-        $this->setRole();
-    }
-
-    /**
      * @param string $password
      * @param object $userObject
      *
