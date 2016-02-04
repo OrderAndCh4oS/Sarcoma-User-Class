@@ -197,12 +197,14 @@ class Users
      */
     public static function login($password, $userObject)
     {
-        if (password_verify($password, $userObject->getPasswordHash())) {
-            session_regenerate_id(true);
-            $_SESSION['username'] = $userObject->getUsername();
-            $_SESSION['time-out'] = time() + 604800;
+        if ($userObject->getPasswordHash()) {
+            if (password_verify($password, $userObject->getPasswordHash())) {
+                session_regenerate_id(true);
+                $_SESSION['username'] = $userObject->getUsername();
+                $_SESSION['time-out'] = time() + 604800;
 
-            return true;
+                return true;
+            }
         }
 
         return false;
