@@ -197,7 +197,7 @@ class Users
      */
     public static function login($password, $userObject)
     {
-        if ($userObject->getPasswordHash()) {
+        if ($userObject) {
             if (password_verify($password, $userObject->getPasswordHash())) {
                 session_regenerate_id(true);
                 $_SESSION['username'] = $userObject->getUsername();
