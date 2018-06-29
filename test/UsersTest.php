@@ -30,18 +30,18 @@ class UsersTest extends PHPUnit_Framework_TestCase
     public function testLogin()
     {
         $user = new Users();
-        $user->setPasswordHash('***REMOVED***');
+        $user->setPasswordHash('password');
         $user->setUsername('Sarcoma');
-        $this->assertTrue($user->login('***REMOVED***', $user));
+        $this->assertTrue($user->login('password', $user));
         $this->assertFalse($user->login('wrongpassword', $user));
     }
 
     public function testAuth()
     {
         $user = new Users();
-        $user->setPasswordHash('***REMOVED***');
+        $user->setPasswordHash('password');
         $user->setUsername('Sarcoma');
-        $this->assertTrue($user->login('***REMOVED***', $user));
+        $this->assertTrue($user->login('password', $user));
         $user->auth('USER', 'USER');
     }
 
